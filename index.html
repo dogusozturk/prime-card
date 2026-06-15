@@ -83,29 +83,8 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
         <span>Tornimäe tn 5, 10145 Tallinn, Estonia</span>
       </a>
-      <a class="btn save" id="saveBtn" href="#">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-8H5v8M17 3v5H7M21 7v14H3V3h14z"/></svg>
-        Save contact
-      </a>
     </div>
   </div>
 
-<script>
-  var vcard = [
-    "BEGIN:VCARD","VERSION:3.0",
-    "N:Öztürk;M. Barış;;;",
-    "FN:M. Barış Öztürk",
-    "ORG:Prime Technology Security OÜ",
-    "TITLE:Cyber Security Specialist | Founder",
-    "TEL;TYPE=CELL:+0032470381717",
-    "EMAIL;TYPE=WORK:baris@primedefense.co",
-    "ADR;TYPE=WORK:;;Tornimäe tn 5;Tallinn;Harju maakond;10145;Estonia",
-    "END:VCARD"
-  ].join("\n");
-  var blob = new Blob([vcard], {type:"text/vcard;charset=utf-8"});
-  var btn = document.getElementById("saveBtn");
-  btn.href = URL.createObjectURL(blob);
-  btn.setAttribute("download","Baris_Ozturk.vcf");
-</script>
 </body>
 </html>
